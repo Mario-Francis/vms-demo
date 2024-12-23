@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Backup Generator (RFP-AE1234) - Vendor Management System</title>
+    <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body class="sb-nav-fixed">
+    <nav class="sb-topnav navbar navbar-expand navbar-light bg-light shadow-sm">
+        <!-- Navbar Brand-->
+        <a class="navbar-brand ps-3" href="index.html">
+            <img src="img/vms_logo.png" class="img-fluid p-2" style="width: 100px;" alt="VMS Logo" />
+        </a>
+        <!-- Sidebar Toggle-->
+        <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i
+                class="fas fa-bars"></i></button>
+        <!-- Navbar-->
+        <ul class="navbar-nav ms-auto ms-0 me-3 me-lg-4">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#!">Settings</a></li>
+                    <li><a class="dropdown-item" href="#!">Activity Log</a></li>
+                    <li>
+                        <hr class="dropdown-divider" />
+                    </li>
+                    <li><a class="dropdown-item" href="#!">Logout</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <div id="layoutSidenav">
+        <div id="layoutSidenav_nav">
+            <nav class="sb-sidenav accordion sb-sidenav-light" id="sidenavAccordion">
+                <div class="sb-sidenav-menu">
+                    <div class="nav py-3">
+                        <div class="sb-sidenav-menu-heading d-none">Core</div>
+                        <a class="nav-link" href="dashboard.html">
+                            <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                            Dashboard
+                        </a>
+                        <a class="nav-link" href="rfps.html">
+                            <div class="sb-nav-link-icon"><i class="fa-regular fa-file-lines"></i></div>
+                            Proposal Requests
+                        </a>
+                        <a class="nav-link" href="vendors.html">
+                            <div class="sb-nav-link-icon"><i class="fa-solid fa-users"></i></div>
+                            Vendors
+                        </a>
+                    </div>
+                </div>
+                <div class="sb-sidenav-footer">
+                    <div class="small">Logged in as:</div>
+                    Administrator
+                </div>
+            </nav>
+        </div>
+        <div id="layoutSidenav_content">
+            <main>
+                <div class="container-fluid px-4">
+                    <h1 class="mt-4">Backup Generator - RFP-AE1234</h1>
+                    <ol class="breadcrumb mb-4">
+                        <li class="breadcrumb-item"><a href="rfps.html">Proposal Requests</a></li>
+                        <li class="breadcrumb-item active">RFP-AE1234</li>
+                    </ol>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="accordion shadow-sm" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            Request Details
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <div class="row">
+                                                <div class="col-lg-4 col-md-2">
+                                                    <p class="m-0 f14"><strong>RFP Number</strong></p>
+                                                    <p>RFP-AE1234</p>
+                                                </div>
+                                                <div class="col-lg-4 col-md-2">
+                                                    <p class="m-0 f14"><strong>Title</strong></p>
+                                                    <p>Backup Generator</p>
+                                                </div>
+
+                                                <div class="col-lg-4 col-md-2">
+                                                    <p class="m-0 f14"><strong>Issue date</strong></p>
+                                                    <p>Dec 4, 2024</p>
+                                                </div>
+                                                <div class="col-lg-4 col-md-2">
+                                                    <p class="m-0 f14"><strong>End Date</strong></p>
+                                                    <p>Jan 30, 2025</p>
+                                                </div>
+                                                <div class="col-lg-4 col-md-2">
+                                                    <p class="m-0 f14"><strong>Status</strong></p>
+                                                    <p><span class="badge rounded-pill text-bg-secondary">Pending</span>
+                                                    </p>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div>
+                                                        <p class="m-0 f14 fw-bold">Overview:</p>
+                                                        <p>This Request for Proposal (RFP) seeks bids from qualified
+                                                            vendors for the supply, installation, and ongoing
+                                                            maintenance of backup generators. The selected vendor will
+                                                            be responsible for ensuring that the backup generator system
+                                                            is capable of maintaining operations during power outages,
+                                                            providing an uninterrupted power supply to critical
+                                                            facilities and equipment.</p>
+
+                                                        <p><strong>Scope of Work:</strong> The vendor will provide a
+                                                            comprehensive solution for a reliable backup power system,
+                                                            which includes:</p>
+
+                                                        <ul>
+                                                            <li><strong>Supply of Backup Generators:</strong> Provide
+                                                                the appropriate size and model of backup generators
+                                                                based on power requirements (specific to the building’s
+                                                                size, critical equipment, and estimated energy
+                                                                consumption). Ensure that the generators are
+                                                                fuel-efficient and capable of running continuously for
+                                                                extended periods.</li>
+                                                            <li><strong>Installation:</strong> Full installation of the
+                                                                backup generator system, including electrical
+                                                                connections, fuel lines, and any required
+                                                                infrastructure. Conduct necessary site surveys to
+                                                                determine the optimal location for installation.</li>
+                                                            <li><strong>Testing and Commissioning:</strong> Perform
+                                                                thorough testing of the backup system to ensure it
+                                                                operates correctly under various load conditions.
+                                                                Commission the system with the appropriate safety
+                                                                measures in place to guarantee the system's performance.
+                                                            </li>
+                                                            <li><strong>Ongoing Maintenance and Support:</strong>
+                                                                Provide a maintenance plan for the backup generator
+                                                                system, including regular checks, oil changes, fuel
+                                                                system inspections, and battery maintenance. Offer a
+                                                                24/7 support and emergency response service in case of
+                                                                any malfunction or failure.</li>
+                                                            <li><strong>Training:</strong> Provide training for the
+                                                                on-site team on how to operate, maintain, and
+                                                                troubleshoot the backup generator.</li>
+                                                        </ul>
+
+                                                        <p class="m-0 f14 fw-bold">Requirements:</p>
+
+
+                                                        <ul>
+                                                            <li>Vendors must demonstrate proven experience in the
+                                                                installation, commissioning, and maintenance of backup
+                                                                generators.</li>
+                                                            <li>The proposed solution must meet all safety standards,
+                                                                local regulations, and environmental guidelines.</li>
+                                                            <li>The vendor must provide warranty and post-installation
+                                                                support for at least 3 years.</li>
+                                                            <li>The solution must be scalable to accommodate future
+                                                                expansion of power needs.</li>
+                                                        </ul>
+
+                                                        <p class="m-0 f14 fw-bold">Proposal Submission Instructions:</p>
+
+                                                        <ul>
+                                                            <li>All proposals must be submitted by specified deadline.
+                                                            </li>
+                                                            <li>Proposals should include a detailed breakdown of the
+                                                                generator models, installation process, and maintenance
+                                                                schedule.</li>
+                                                            <li>The vendor should also provide references from previous
+                                                                clients for whom similar services were performed.</li>
+                                                        </ul>
+
+                                                        <p class=""><strong>Evaluation Criteria:</strong> Proposals will
+                                                            be evaluated based on the following criteria:</p>
+
+                                                        <ul>
+                                                            <li>Compliance with technical specifications and scope of
+                                                                work.</li>
+                                                            <li>Cost-effectiveness and value for money.</li>
+                                                            <li>Vendor experience and reputation in the industry.</li>
+                                                            <li>Warranty, support, and maintenance options.</li>
+                                                        </ul>
+
+                                                        <p>For any clarifications or questions, please contact us.</p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                            aria-expanded="false" aria-controls="collapseTwo">
+                                            Request Documents
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <div class="table-responsive">
+                                                <table class="table table-striped">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>#</th>
+                                                            <th>Document Name</th>
+                                                            <th>Type</th>
+                                                            <th>Size</th>
+                                                            <th>Action</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>1</td>
+                                                            <td>Project Plan</td>
+                                                            <td>PDF</td>
+                                                            <td>1.2 MB</td>
+                                                            <td>
+                                                                <a href="#"
+                                                                    class="btn btn-sm btn-outline-primary btn-sm"
+                                                                    download><i class="fa-solid fa-download"></i>
+                                                                    &nbsp;Download</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2</td>
+                                                            <td>Budget Report</td>
+                                                            <td>Excel</td>
+                                                            <td>500 KB</td>
+                                                            <td>
+                                                                <a href="#"
+                                                                    class="btn btn-sm btn-outline-primary btn-sm"
+                                                                    download><i class="fa-solid fa-download"></i>
+                                                                    &nbsp;Download</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>3</td>
+                                                            <td>Meeting Notes</td>
+                                                            <td>Word</td>
+                                                            <td>300 KB</td>
+                                                            <td>
+                                                                <a href="#"
+                                                                    class="btn btn-sm btn-outline-primary btn-sm"
+                                                                    download><i class="fa-solid fa-download"></i>
+                                                                    &nbsp;Download</a>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                            aria-expanded="false" aria-controls="collapseThree">
+                                            Submitted Proposals
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <div class="table-responsive">
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>#</th>
+                                                            <th></th>
+                                                            <th>Vendor</th>
+                                                            <th>Proposed Cost</th>
+                                                            <th>Date Submitted</th>
+                                                            <th>Status</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>1.</td>
+                                                            <td>
+                                                                <div class="dropdown">
+                                                                    <button class="btn dropdown-toggle py-1 px-2"
+                                                                        type="button" data-bs-toggle="dropdown"
+                                                                        aria-expanded="false">
+                                                                        <i
+                                                                            class="fa-solid fa-ellipsis-vertical f14"></i>
+                                                                    </button>
+                                                                    <ul class="dropdown-menu">
+                                                                        <li><a class="dropdown-item" href="proposal-detail.html">View
+                                                                                Details</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </td>
+                                                            <td>Jack & Co. Engineering LTD</td>
+                                                            <td>&#8358;45,000,000.00</td>
+                                                            <td>Dec 30, 2024</td>
+                                                            <td>
+                                                                <span
+                                                                    class="badge rounded-pill text-bg-secondary">Pending
+                                                                    Review</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2.</td>
+                                                            <td>
+                                                                <div class="dropdown">
+                                                                    <button class="btn dropdown-toggle py-1 px-2"
+                                                                        type="button" data-bs-toggle="dropdown"
+                                                                        aria-expanded="false">
+                                                                        <i
+                                                                            class="fa-solid fa-ellipsis-vertical f14"></i>
+                                                                    </button>
+                                                                    <ul class="dropdown-menu">
+                                                                        <li><a class="dropdown-item" href="#">View
+                                                                                Details</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </td>
+                                                            <td>Trusted Electronics LTD</td>
+                                                            <td>&#8358;38,700,000.00</td>
+                                                            <td>Dec 31, 2024</td>
+                                                            <td>
+                                                                <span
+                                                                    class="badge rounded-pill text-bg-success">Accepted</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>3.</td>
+                                                            <td>
+                                                                <div class="dropdown">
+                                                                    <button class="btn dropdown-toggle py-1 px-2"
+                                                                        type="button" data-bs-toggle="dropdown"
+                                                                        aria-expanded="false">
+                                                                        <i
+                                                                            class="fa-solid fa-ellipsis-vertical f14"></i>
+                                                                    </button>
+                                                                    <ul class="dropdown-menu">
+                                                                        <li><a class="dropdown-item" href="#">View
+                                                                                Details</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </td>
+                                                            <td>Olaunji and Sons Limited</td>
+                                                            <td>&#8358;75,000,000.00</td>
+                                                            <td>Dec 28, 2024</td>
+                                                            <td>
+                                                                <span
+                                                                    class="badge rounded-pill text-bg-danger">Rejected</span>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </main>
+            <footer class="py-4 bg-light mt-auto">
+                <div class="container-fluid px-4">
+                    <div class="d-flex align-items-center justify-content-between small">
+                        <div class="text-muted">Copyright &copy; Vendor Management System 2024</div>
+                        <div>
+                            <a href="#">Privacy Policy</a>
+                            &middot;
+                            <a href="#">Terms &amp; Conditions</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+    <script src="assets/demo/chart-area-demo.js"></script>
+    <script src="assets/demo/chart-bar-demo.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js"
+        crossorigin="anonymous"></script>
+    <script src="js/datatables-simple-demo.js"></script>
+</body>
+
+</html>
